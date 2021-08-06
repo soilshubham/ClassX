@@ -26,24 +26,24 @@ class NavbarComp extends React.Component {
                   Home
                 </Link>
               </Nav.Link>
-              <Nav.Link className="nav-items">
+              {/* <Nav.Link className="nav-items">
                 <Link to="/about" className="navbar-links">
                   About
                 </Link>
-              </Nav.Link>
-              {/* <NavDropdown
+              </Nav.Link> */}
+              <NavDropdown
                 title="Subject"
                 id="basic-nav-dropdown"
                 className="nav-items"
               >
                 {this.props.subData.map((obj, key) => (
-                  <NavDropdown.Item key={key}>
+                  <NavDropdown.Item key={key} className="dropdown-item">
                     <Link to={"/sub/" + obj.sub} className="navbar-links">
-                      {obj.name}
+                      <div>{obj.name}</div>
                     </Link>
                   </NavDropdown.Item>
                 ))}
-              </NavDropdown> */}
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

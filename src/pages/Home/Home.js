@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.scss";
 
 import { Container, Row, Col } from "react-bootstrap";
 import SubCard from "../../components/SubjectCard/SubCard";

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -137,15 +137,17 @@ let subData = [
 class App extends React.Component {
   render() {
     return (
-      <Router basename="/ClassX">
+      <Router>
         <Navbar subData={subData} />
         <Switch>
           <Route exact path="/">
             <Home subData={subData} />
           </Route>
-          <Route path="/sub">
-            <Subjects subData={subData} />
-          </Route>
+          {subData.map((sub) => (
+            <Route path={"/sub/" + sub.sub}>
+              <Subjects data={sub} />
+            </Route>
+          ))}
         </Switch>
         {/* <Footer /> */}
       </Router>

@@ -14,13 +14,8 @@ class SubjectPage extends React.Component {
     };
   }
 
-  UNSAFE_componentWillMount() {
-    for (let i = 0; i < this.props.subData.length; i++) {
-      if (this.props.subData[i].sub === window.location.pathname.slice(5)) {
-        this.setState({ subject: this.props.subData[i] });
-        break;
-      }
-    }
+  componentDidMount() {
+    this.setState({ subject: this.props.data });
   }
 
   render() {
@@ -28,9 +23,9 @@ class SubjectPage extends React.Component {
       <>
         <DashHeader
           title={
-            this.state.subject.name +
+            this.props.data.name +
             " (" +
-            this.state.subject.classLinks.length +
+            this.props.data.classLinks.length +
             ")"
           }
         />
@@ -40,7 +35,7 @@ class SubjectPage extends React.Component {
             <Col className="subject-col">Link</Col>
             <Col className="subject-col">Action</Col>
           </Row>
-          {this.state.subject.classLinks.map((link, key) => (
+          {this.props.data.classLinks.map((link, key) => (
             <Row className="subject-row">
               <Col md={4} sm={12} className="subject-col">
                 {link.date}

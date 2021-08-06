@@ -12,14 +12,13 @@ class DashHeader extends React.Component {
       <>
         <Container className="dash-header-container">
           <h2 className="page-header">
-            <Link to="/" className="fa-icon">
-              {window.location.pathname != "/" ? (
-                <FontAwesomeIcon icon={faArrowLeft} />
+            <Link to="/" className="content">
+              {this.props.title === "Home" ? (
+                <FontAwesomeIcon className="fas-icon" icon={faHome} />
               ) : (
-                <FontAwesomeIcon icon={faHome} />
+                <FontAwesomeIcon className="fas-icon" icon={faArrowLeft} />
               )}
             </Link>
-
             {this.props.title}
           </h2>
         </Container>
