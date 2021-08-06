@@ -137,7 +137,7 @@ let subData = [
 class App extends React.Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Navbar subData={subData} />
         <Switch>
           <Route exact path="/">
