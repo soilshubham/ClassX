@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/classx/static/css/main.e79fcc25.chunk.css",
+    "main.js": "/classx/static/js/main.7362538f.chunk.js",
+    "main.js.map": "/classx/static/js/main.7362538f.chunk.js.map",
+    "runtime-main.js": "/classx/static/js/runtime-main.28674bfb.js",
+    "runtime-main.js.map": "/classx/static/js/runtime-main.28674bfb.js.map",
+    "static/css/2.4be38407.chunk.css": "/classx/static/css/2.4be38407.chunk.css",
+    "static/js/2.80f7d4aa.chunk.js": "/classx/static/js/2.80f7d4aa.chunk.js",
+    "static/js/2.80f7d4aa.chunk.js.map": "/classx/static/js/2.80f7d4aa.chunk.js.map",
+    "index.html": "/classx/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/classx/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.e79fcc25.chunk.css.map": "/classx/static/css/main.e79fcc25.chunk.css.map",
+    "static/js/2.80f7d4aa.chunk.js.LICENSE.txt": "/classx/static/js/2.80f7d4aa.chunk.js.LICENSE.txt",
+    "static/media/StudyBanner.ae5466bb.jpg": "/classx/static/media/StudyBanner.ae5466bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28674bfb.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.80f7d4aa.chunk.js",
+    "static/css/main.e79fcc25.chunk.css",
+    "static/js/main.7362538f.chunk.js"
+  ]
+}
