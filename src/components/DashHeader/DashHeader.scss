@@ -1,16 +1,23 @@
 .dash-header-container {
   margin-top: 5rem;
-
+  padding-right: 0;
+  padding-left: 0;
   .page-header {
     font-weight: 600;
     padding: 1.5rem 2rem;
     font-size: 1.4rem;
     background-color: #ffffff;
     border-radius: 7px;
+    color: #484f5a;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
 
     .fa-icon {
-      padding: 0 1rem;
-      color: #323a47;
+      padding: 0 1rem 0 0;
+      font-size: 1.4rem;
+      color: #484f5a;
     }
   }
 }

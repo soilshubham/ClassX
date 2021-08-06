@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Navbar.scss";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class NavbarComp extends React.Component {
   render() {
@@ -12,20 +13,37 @@ class NavbarComp extends React.Component {
         expand="md"
       >
         <Container>
-          <Navbar.Brand className="brand-text">ClassX</Navbar.Brand>
+          <Navbar.Brand className="brand-text">
+            <Link to="/" className="navbar-links">
+              ClassX
+            </Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="nav-links" id="basic-navbar-nav">
             <Nav className="me-auto">
-              {/* <Nav.Link href="#link">About</Nav.Link> */}
-              <NavDropdown
+              <Nav.Link className="nav-items">
+                <Link to="/" className="navbar-links">
+                  Home
+                </Link>
+              </Nav.Link>
+              <Nav.Link className="nav-items">
+                <Link to="/about" className="navbar-links">
+                  About
+                </Link>
+              </Nav.Link>
+              {/* <NavDropdown
                 title="Subject"
                 id="basic-nav-dropdown"
                 className="nav-items"
               >
                 {this.props.subData.map((obj, key) => (
-                  <NavDropdown.Item key={key}>{obj.name}</NavDropdown.Item>
+                  <NavDropdown.Item key={key}>
+                    <Link to={"/sub/" + obj.sub} className="navbar-links">
+                      {obj.name}
+                    </Link>
+                  </NavDropdown.Item>
                 ))}
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

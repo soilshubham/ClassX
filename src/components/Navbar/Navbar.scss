@@ -7,11 +7,20 @@
     font-weight: 600;
   }
 
-  .nav-items{
+  .nav-items {
     font-size: 0.9rem;
   }
 }
 
-.dropdown-menu{
+.navbar-links {
+  text-decoration: none;
+  color: #323a47;
+
+  &:hover {
+    color: #323a47;
+  }
+}
+
+.dropdown-menu {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }

@@ -16,7 +16,10 @@ class SubjectPage extends React.Component {
 
   UNSAFE_componentWillMount() {
     for (let i = 0; i < this.props.subData.length; i++) {
-      if (this.props.subData[i].sub === window.location.pathname.slice(5)) {
+      if (
+        this.props.subData[i].sub ===
+        window.location.pathname.slice(process.env.PUBLIC_URL.length + 5)
+      ) {
         this.setState({ subject: this.props.subData[i] });
         break;
       }
