@@ -1,17 +1,13 @@
 import React from "react";
 
-import { Navbar, Container, NavbarBrand } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 
 class Footer extends React.Component {
   render() {
     return (
-      <div className="fixed-bottom">
-        <Navbar color="dark" dark>
-          <Container>
-            <NavbarBrand>Footer</NavbarBrand>
-          </Container>
-        </Navbar>
-      </div>
+      <Navbar bg="light" className="d-flex justify-content-center fixed-bottom">
+        <div>copyright</div>
+      </Navbar>
     );
   }
 }

@@ -1,19 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBook, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+import "./SubCard.scss";
 
 import { Card, Button } from "react-bootstrap";
 
 class SubCard extends React.Component {
   render() {
     return (
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="https://www.fillmurray.com/640/360" />
+      <Card className={"subcard " + this.props.color}>
+        <div className="cover-container">
+          <div className="overlay"></div>
+          <Card.Img className="cover" variant="top" src={this.props.cover} />
+        </div>
         <Card.Body>
-          <Card.Title>Subject 1</Card.Title>
-          <Card.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-            necessitatibus.
-          </Card.Text>
-          <Button variant="primary">Get Resources</Button>
+          <Card.Title className="title">
+            <FontAwesomeIcon className="fa-icon" icon={faBook} />
+            {this.props.name}
+          </Card.Title>
+          <hr />
+          {/* <Card.Text className="text">{this.props.desc}</Card.Text> */}
+          <Link to={"/sub/" + this.props.sub}>
+            <Button className="btn">
+              Get Resources
+              <FontAwesomeIcon className="fa-icon" icon={faArrowRight} />
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
     );
