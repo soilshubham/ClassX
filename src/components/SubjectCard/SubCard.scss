@@ -1,0 +1,184 @@
+.subcard {
+  border-radius: 5px;
+  border-style: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 1.2rem 0.5rem;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  .cover-container {
+    position: relative;
+
+    .cover {
+      object-fit: cover;
+      width: 100%;
+      height: 80px;
+    }
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      top: 0;
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    .fa-icon {
+      margin-right: 8px;
+    }
+  }
+
+  hr {
+    margin: 1rem 0 1.3rem;
+    color: #00233f38;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    color: #718286;
+    background-color: #f1f7f8;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    border-style: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    .fa-icon {
+      margin-left: 8px;
+    }
+  }
+}
+
+.subcard {
+  &.blue {
+    .overlay {
+      background-color: #1e9aff;
+    }
+
+    .title {
+      .fa-icon {
+        color: #1e9aff;
+      }
+    }
+
+    .btn {
+      background-color: #1e9aff;
+
+      &:hover {
+        background-color: #3ba7ff;
+      }
+    }
+  }
+
+  &.red {
+    .overlay {
+      background-color: #ff6262;
+    }
+
+    .title {
+      .fa-icon {
+        color: #ff6262;
+      }
+    }
+
+    .btn {
+      background-color: #ff6262;
+
+      &:hover {
+        background-color: #ff7070;
+      }
+    }
+  }
+
+  &.green {
+    .overlay {
+      background-color: #26b67f;
+    }
+
+    .title {
+      .fa-icon {
+        color: #26b67f;
+      }
+    }
+
+    .btn {
+      background-color: #26b67f;
+
+      &:hover {
+        background-color: #35be8a;
+      }
+    }
+  }
+
+  &.purple {
+    .overlay {
+      background-color: #a45fff;
+    }
+
+    .title {
+      .fa-icon {
+        color: #a45fff;
+      }
+    }
+
+    .btn {
+      background-color: #a45fff;
+
+      &:hover {
+        background-color: #ac6dff;
+      }
+    }
+  }
+
+  &.orange {
+    .overlay {
+      background-color: #ff9650;
+    }
+
+    .title {
+      .fa-icon {
+        color: #ff9650;
+      }
+    }
+
+    .btn {
+      background-color: #ff9650;
+
+      &:hover {
+        background-color: rgb(255, 157, 92);
+      }
+    }
+  }
+
+  &.pink {
+    .overlay {
+      background-color: #ff5b8c;
+    }
+
+    .title {
+      .fa-icon {
+        color: #ff5b8c;
+      }
+    }
+
+    .btn {
+      background-color: #ff5b8c;
+
+      &:hover {
+        background-color: #ff6795;
+      }
+    }
+  }
+}
