@@ -6,6 +6,7 @@ import "./App.scss";
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import Subjects from "./pages/Subjects/SubjectPage";
 import Footer from "./components/Footer/Footer";
 
@@ -51,6 +52,9 @@ class App extends React.Component {
           <Route exact path="/">
             <Home subData={this.state.subData} />
             <Footer />
+          </Route>
+          <Route exact path="/about">
+            <About subData={this.state.subData} />
           </Route>
           {this.state.subData.length > 0 ? (
             this.state.subData.map((sub) => (

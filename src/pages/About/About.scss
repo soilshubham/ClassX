@@ -1,0 +1,74 @@
+.about-page {
+  background-color: #fff;
+  margin: 1rem auto 0;
+  border-radius: 5px;
+  padding: 3rem 7rem 4rem;
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+  a {
+    text-decoration: none;
+  }
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  .about-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+    @media (max-width: 768px) {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 7px 25px,
+        rgba(0, 0, 0, 0.1) 0px 5px 10px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.about-auth-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  transition: all 0.1s ease;
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .card-body {
+    padding: 0.7rem 1rem;
+  }
+
+  .title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .desc {
+    font-size: 0.8rem;
+  }
+
+  .image {
+    border-radius: 50%;
+    width: 25%;
+    max-width: 100%;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: #323a47;
+}

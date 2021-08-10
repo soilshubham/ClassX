@@ -8,7 +8,13 @@ class Footer extends React.Component {
   render() {
     return (
       <Navbar bg="light" className="footer">
-        <div>ClassX - @Sahil Shubham</div>
+        <a
+          href="https://github.com/soilshubham"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          ClassX - @Sahil Shubham
+        </a>
       </Navbar>
     );
   }

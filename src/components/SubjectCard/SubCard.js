@@ -24,7 +24,8 @@ class SubCard extends React.Component {
           {/* <Card.Text className="text">{this.props.desc}</Card.Text> */}
           <Link to={"/sub/" + this.props.sub}>
             <Button className="btn">
-              Get Resources
+              {this.props.sub.length > 0 ? "Get Resources" : "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"}
+
               <FontAwesomeIcon className="fa-icon" icon={faArrowRight} />
             </Button>
           </Link>

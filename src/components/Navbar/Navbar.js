@@ -14,7 +14,7 @@ class NavbarComp extends React.Component {
       >
         <Container>
           <Navbar.Brand className="brand-text">
-            <Link to="/" className="navbar-links">
+            <Link to="/about" className="navbar-links">
               ClassX
             </Link>
           </Navbar.Brand>
@@ -26,11 +26,11 @@ class NavbarComp extends React.Component {
                   Home
                 </Link>
               </Nav.Link>
-              {/* <Nav.Link className="nav-items">
+              <Nav.Link className="nav-items">
                 <Link to="/about" className="navbar-links">
                   About
                 </Link>
-              </Nav.Link> */}
+              </Nav.Link>
               <NavDropdown
                 title="Subject"
                 id="basic-nav-dropdown"

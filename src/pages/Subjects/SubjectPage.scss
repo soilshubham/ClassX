@@ -41,5 +41,8 @@
     margin: 1rem 0;
     background-color: #1e9aff;
     border-style: none;
+    @media (max-width: 768px) {
+      width: 14rem;
+    }
   }
 }

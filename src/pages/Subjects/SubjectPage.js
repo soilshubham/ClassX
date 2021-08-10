@@ -32,22 +32,22 @@ class SubjectPage extends React.Component {
         <Container className="subject-page-container">
           <Row className="subject-header">
             <Col className="subject-col">Date</Col>
+            <Col className="subject-col">Description</Col>
             <Col className="subject-col">Link</Col>
-            <Col className="subject-col">Action</Col>
           </Row>
           {this.props.data.classLinks.length > 0 ? (
             this.props.data.classLinks.map((link, key) => (
               <Row className="subject-row">
-                <Col md={4} sm={12} className="subject-col">
+                <Col md={4} sm={6} className="subject-col">
                   {link.date}
                 </Col>
-                <Col md={4} sm={12} className="subject-col">
-                  <a href={link.link}>
-                    <Button className="btn">View Class</Button>
-                  </a>
+                <Col md={4} sm={6} className="subject-col">
+                  Unit 1 - Prof. XYZ
                 </Col>
                 <Col md={4} sm={12} className="subject-col">
-                  <Form.Check type="checkbox" label="Watched" />
+                  <a href={link.link} target="_blank" rel="noreferrer noopener">
+                    <Button className="btn">View Class</Button>
+                  </a>
                 </Col>
               </Row>
             ))
