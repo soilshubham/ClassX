@@ -35,21 +35,29 @@ class SubjectPage extends React.Component {
             <Col className="subject-col">Link</Col>
             <Col className="subject-col">Action</Col>
           </Row>
-          {this.props.data.classLinks.map((link, key) => (
+          {this.props.data.classLinks.length > 0 ? (
+            this.props.data.classLinks.map((link, key) => (
+              <Row className="subject-row">
+                <Col md={4} sm={12} className="subject-col">
+                  {link.date}
+                </Col>
+                <Col md={4} sm={12} className="subject-col">
+                  <a href={link.link}>
+                    <Button className="btn">View Class</Button>
+                  </a>
+                </Col>
+                <Col md={4} sm={12} className="subject-col">
+                  <Form.Check type="checkbox" label="Watched" />
+                </Col>
+              </Row>
+            ))
+          ) : (
             <Row className="subject-row">
-              <Col md={4} sm={12} className="subject-col">
-                {link.date}
-              </Col>
-              <Col md={4} sm={12} className="subject-col">
-                <Link to="/lecturelink">
-                  <Button className="btn">View Class</Button>
-                </Link>
-              </Col>
-              <Col md={4} sm={12} className="subject-col">
-                <Form.Check type="checkbox" label="Watched" />
+              <Col sm={12} className="subject-col">
+                No Recordings Available
               </Col>
             </Row>
-          ))}
+          )}
         </Container>
       </>
     );

@@ -36,13 +36,19 @@ class NavbarComp extends React.Component {
                 id="basic-nav-dropdown"
                 className="nav-items"
               >
-                {this.props.subData.map((obj, key) => (
-                  <NavDropdown.Item key={key} className="dropdown-item">
-                    <Link to={"/sub/" + obj.sub} className="navbar-links">
-                      <div>{obj.name}</div>
-                    </Link>
+                {this.props.subData.length > 0 ? (
+                  this.props.subData.map((obj, key) => (
+                    <NavDropdown.Item key={key} className="dropdown-item">
+                      <Link to={"/sub/" + obj.sub} className="navbar-links">
+                        <div>{obj.name}</div>
+                      </Link>
+                    </NavDropdown.Item>
+                  ))
+                ) : (
+                  <NavDropdown.Item className="dropdown-item">
+                    <div>Loading...</div>
                   </NavDropdown.Item>
-                ))}
+                )}
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
