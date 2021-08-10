@@ -1,0 +1,59 @@
+{
+  "_id": { "$oid": "61120fc8e6c3368ef17e69c1" },
+  "subjects": [
+    {
+      "name": "Compiler Design",
+      "sub": "cd",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    },
+    {
+      "name": "Operating System",
+      "sub": "os",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    },
+    {
+      "name": "Differential Equations",
+      "sub": "de",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "sub": "cn",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    },
+    {
+      "name": "ISCP",
+      "sub": "iscp",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    },
+    {
+      "name": "CDC",
+      "sub": "cdc",
+      "classLinks": [
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" },
+        { "date": "3rd August 2021", "link": "https://github.com" }
+      ]
+    }
+  ]
+}

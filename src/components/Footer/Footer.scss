@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+
+  a {
+    text-decoration: none;
+    color: #323a47;
+
+    &:hover {
+      color: #3579e7;
+    }
+  }
+}
