@@ -14,7 +14,7 @@ class NavbarComp extends React.Component {
       >
         <Container>
           <Navbar.Brand className="brand-text">
-            <Link to="/about" className="navbar-links">
+            <Link to="/" className="navbar-links">
               ClassX
             </Link>
           </Navbar.Brand>
@@ -40,7 +40,7 @@ class NavbarComp extends React.Component {
                   this.props.subData.map((obj, key) => (
                     <NavDropdown.Item key={key} className="dropdown-item">
                       <Link to={"/sub/" + obj.sub} className="navbar-links">
-                        <div>{obj.name}</div>
+                        <div className="dropdown-link">{obj.name}</div>
                       </Link>
                     </NavDropdown.Item>
                   ))
