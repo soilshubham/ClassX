@@ -29,6 +29,8 @@ class SubjectPage extends React.Component {
 
   render() {
     const filterSection = () => {};
+    document.title = "ClassX - " + this.props.data.name.toString();
+
     return (
       <div className="mb-5">
         <DashHeader

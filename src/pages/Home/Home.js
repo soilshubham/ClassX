@@ -7,6 +7,9 @@ import DashHeader from "../../components/DashHeader/DashHeader";
 import "./Home.scss";
 
 class Dashboard extends React.Component {
+  componentDidMount() {
+    document.title = "ClassX - " + "Home";
+  }
   render() {
     return (
       <>

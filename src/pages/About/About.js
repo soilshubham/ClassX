@@ -8,6 +8,7 @@ import AboutIMG from "../../assets/images/about.jpeg";
 import MeIMG from "../../assets/images/me.jpg";
 class About extends React.Component {
   render() {
+    document.title = "ClassX - " + "About";
     return (
       <>
         <DashHeader title="About" />
