@@ -22,11 +22,14 @@ class App extends React.Component {
   }
   fetchData = () => {
     axios
-      .get("https://serene-citadel-10836.herokuapp.com/sub")
+      .get(
+        "https://raw.githubusercontent.com/soilshubham/ClassX/develop/data.json"
+      )
       .then((res) => {
+        console.log(res.data);
         let colorsArray = ["blue", "red", "purple", "green", "pink", "orange"];
         let updatedSubjects = [];
-        res.data[0].subjects.map((obj, key) => {
+        res.data.subjects.map((obj, key) => {
           obj.cover = StudyBanner;
           obj.color = colorsArray[key];
           updatedSubjects.push(obj);
