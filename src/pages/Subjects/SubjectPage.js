@@ -42,7 +42,7 @@ class SubjectPage extends React.Component {
                   {link.date}
                 </Col>
                 <Col md={4} sm={6} className="subject-col">
-                  {link.desc.length > 0 ? link.desc : "none"}
+                  {link.length > 0 ? link.desc : "none"}
                 </Col>
                 <Col md={4} sm={12} className="subject-col">
                   <a href={link.link} target="_blank" rel="noreferrer noopener">

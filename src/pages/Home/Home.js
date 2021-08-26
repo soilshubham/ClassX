@@ -25,7 +25,7 @@ class Dashboard extends React.Component {
                     />
                   </Col>
                 ))
-              : [0, 1, 2, 3, 4, 5].map((obj, key) => (
+              : [0, 1, 2].map((obj, key) => (
                   <Col lg={4} md={6} sm={12}>
                     <SubCard key={key} name="" sub="" cover="" color="" />
                   </Col>

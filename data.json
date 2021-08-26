@@ -1,0 +1,70 @@
+{
+  "subjects": [
+    {
+      "name": "Compiler Design",
+      "sub": "cd",
+      "classLinks": []
+    },
+    {
+      "name": "Operating System",
+      "sub": "os",
+      "classLinks": []
+    },
+    {
+      "name": "Differential Equations",
+      "sub": "de",
+      "classLinks": [
+        {
+          "date": "19th Aug 2021",
+          "sec": "c",
+          "link": "https://srmap.zoom.us/rec/share/PRwg15X8ZY_QoTlwNDjPzS3Pw48woAKwXQXGoPcGb9XymamJdN2mbDl5tXxV-Tm7.1_SEEzBdyOAZbEEd"
+        },
+        {
+          "date": "18th Aug 2021",
+          "sec": "b",
+          "link": "https://srmap.zoom.us/rec/share/6ftYO6LtXh0DUT5GJ0yqbsV4W6jEZp_CZLQuCa3H8JnJJNXBSV9gikikOI-g8TTK.Bl1919u-GhdEIzbt"
+        },
+        {
+          "date": "18th Aug 2021",
+          "sec": "c",
+          "link": "https://srmap.zoom.us/rec/share/4JQMFU1jmCJC5qlRYolS5nE1JjOyXTBRmbeKCiMLSxLKDEQz5qb4mhB5F4IkviyD.nRwPoZE5mWB7qWz4"
+        },
+        {
+          "date": "13th Aug 2021",
+          "sec": "b",
+          "link": "https://srmap.zoom.us/rec/share/ZpEAGmByKpV00_yhJoiIHb35H1vCN4ydnJ99Ctefz_RN62ljVQm6hBxXzqlIDNbD.u3ROj1-wVWGhJ_Om"
+        },
+        {
+          "date": "12th Aug 2021",
+          "sec": "c",
+          "link": "https://srmap.zoom.us/rec/share/yYwcoFqzvOJG2YDvTNo2kPMjBeXKZxIdV06nsnQMcnhNDE7858JDqCtzs0aPPlu1.vGZTjhXEW0jLihz4"
+        },
+        {
+          "date": "11th Aug 2021",
+          "sec": "b",
+          "link": "https://srmap.zoom.us/rec/share/lRNoFe4xIEP5Hcl1MQoP2Ggq501LV-Yhn5j9SnXEdEQA4lwVKZIicJxU0Q19SYcK.mKO6PaQP9UsKS01p"
+        },
+        {
+          "date": "11th Aug 2021",
+          "sec": "c",
+          "link": "https://srmap.zoom.us/rec/share/KDC1DW5Q6km3nAJke1qcCuXjXTXLkhRqlKKtQ1yVb0czvsJrPHsWbx4BcJ0fFIl-.1-f2C55rmfTtA3iG"
+        }
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "sub": "cn",
+      "classLinks": []
+    },
+    {
+      "name": "ISCP",
+      "sub": "iscp",
+      "classLinks": []
+    },
+    {
+      "name": "CDC",
+      "sub": "cdc",
+      "classLinks": []
+    }
+  ]
+}

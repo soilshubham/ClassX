@@ -8,7 +8,8 @@ import ServerDown from "./ServerDown";
 
 ReactDOM.render(
   <Router>
-    <ServerDown />
+    {/* <ServerDown /> */}
+    <App />
   </Router>,
   document.getElementById("root")
 );

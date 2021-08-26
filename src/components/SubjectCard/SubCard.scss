@@ -8,6 +8,12 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
+  transition: all 0.2s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
   .cover-container {
     position: relative;
 
@@ -28,7 +34,7 @@
   }
 
   .title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.3rem;
 
     .fa-icon {
@@ -191,7 +197,8 @@
   border-radius: 5px;
   border-style: none;
   overflow: hidden;
-  background-color: #eeeeee;
+  background-color: transparent;
+  border: solid 1px #d1d1d1;
   margin: 1.2rem 0.5rem;
 
   user-select: none;
