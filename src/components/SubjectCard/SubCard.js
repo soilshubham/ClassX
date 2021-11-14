@@ -19,7 +19,7 @@ class SubCard extends React.Component {
           <Card.Body>
             <Card.Title className="title">
               <FontAwesomeIcon className="fa-icon" icon={faBook} />
-              {this.props.name}
+              {this.props.name} {" "} ({this.props.dataLength})
             </Card.Title>
             <hr />
             {/* <Card.Text className="text">{this.props.desc}</Card.Text> */}
